@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="http://example.com/favicon.png">
+    <link rel="stylesheet" href="challenge3.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="grid-container">
+        <div class="grid-item">
+
+            Penalty List
+            <div>
+                <input type="text" placeholder="Enter player name" id="addName">
+                <button id="addNameBtn" onclick="newElement()">+</button>
+            </div>
+            <div id="center-ul">
+                <ul id="myUL">
+                </ul>
+            </div>
+            <div>
+                <button id="clear" class="btn" onclick="clear()">Clear</button>
+            </div>
+         
+        </div>
+        <div class="grid-item">
+          <div class="">
+            <div>
+                Penalty List
+                <div>
+                    <input type="text" placeholder="Enter player name" id="addName1">
+                    <button id="addNameBtn1" onclick="newElement1()">+</button>
+                </div>
+                <div id="center-ul">
+                    <ul id="myUL1">
+                    </ul>
+                </div>
+                <div>
+                    <button class="btn" onclick="clear1()" id="clear1">Clear</button>
+                </div>
+            </div>
+            <div id="center-ul">
+                <ul id="myUL1">
+                </ul>
+            </div>
+            <div>
+            </div>
+        </div>
+        </div>
+        <div class="grid-item">
+            <div class="">
+
+                Home
+                <div id="home" value="0"><span id="point1">0</span></div>
+                <button type="button" class="btn" onclick="increment('point1')">
+                  +
+                </button>
+                <button
+                  type="button"
+                  class="btn btn2"
+                  onclick="decrement('point1')"
+                >
+                  -
+                </button>
+
+               
+            </div>
+        </div>
+        <div class="grid-item">
+            Period
+          <div id="" value="0"><span id="period">1</span></div>
+          <button type="button" class="btn" onclick="periodInc('period')">
+            +
+          </button>
+          <button
+            type="button"
+            class="btn btn2"
+            onclick="periodDec('period')"
+          >
+            -
+          </button>
+        </div>
+        <div class="grid-item">
+            <p>Shot</p>
+            <div>
+                <div id="" value="0"><span id="g2">0</span></div>
+                    <button type="button" class="btn" onclick="increment('g2')">
+                      +
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn2"
+                      onclick="decrement('g2')"
+                    >
+                      -
+                    </button>
+            </div>
+        </div>
+        <div class="grid-item">
+            
+            Guest
+            <div id="guest"><span id="point2">0</span></div>
+            <button type="button" class="btn" onclick="increment('point2')">
+              +
+            </button>
+            <button
+              type="button"
+              class="btn btn2"
+              onclick="decrement('point2')""
+            >
+              -
+            </button>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+  <script src="challenge3.js"></script>
+</html>
